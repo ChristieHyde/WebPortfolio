@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Christie Hyde's Portfolio</title>
 </head>
 
@@ -27,51 +28,56 @@
     <main>
         <section class="hero">
             <div class="hero-container">
-                <p id="hero-subtitle">Web Developer</p>
+                <p class="hero-subtitle">Web Developer</p>
             </div>
         </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a web developer based in Australia. I have industry 
-                experience working with CSS, JavaScript and React 
-                technologies. More recently, I am partaking in the University 
-                of Western Australia Coding Bootcamp to increase my skills and 
-                independence in these areas.
-            </p>
-            <div id="my-photo"></div>
-        </section>
-        <section id="portfolio">
-            <h2>My Work</h2>
-            <div class="portfolio-container">
-                <article class="portfolio-card" id="top-result">
-                    <div class="portfolio-title">
-                        <h3>Horiseon Webpage</h3>
-                        <p>HTML/CSS</p>
+        <section class="page-content">
+            <article id="about">
+                <h2>About Me</h2>
+                <div class="content-container">
+                    <p class="content-container">I am a web developer based in 
+                        Australia. I have industry experience working with 
+                        CSS, JavaScript and React technologies. More recently, 
+                        I am partaking in the University of Western Australia 
+                        Coding Bootcamp to increase my skills and independence 
+                        in these areas.
+                    </p>
+                    <img id="my-photo">
+                </div>
+            </article>
+            <article id="portfolio">
+                <h2>My Work</h2>
+                <div class="content-container portfolio-container">
+                    <div class="portfolio-card" id="top-result">
+                        <div class="portfolio-title">
+                            <h3>Horiseon Webpage</h3>
+                            <p>HTML/CSS</p>
+                        </div>
                     </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-title">
-                        <h3>CSS Snippet Cheatsheet</h3>
-                        <p>HTML/CSS</p>
+                    <div class="portfolio-card">
+                        <div class="portfolio-title">
+                            <h3>CSS Snippet Cheatsheet</h3>
+                            <p>HTML/CSS</p>
+                        </div>
                     </div>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-title">
-                        <h3>Sample Landing Page</h3>
-                        <p>HTML/CSS</p>
+                    <div class="portfolio-card">
+                        <div class="portfolio-title">
+                            <h3>Sample Landing Page</h3>
+                            <p>HTML/CSS</p>
+                        </div>
                     </div>
-                </article>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-                <nav id="contact-links">
+                </div>
+            </article>
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <nav class="content-container" id="contact-links">
                     <ul>
                         <li>Email (coming soon)</li>
                         <li a="https://github.com/ChristieHyde">Github</li>
                         <li>LinkedIn (coming soon)</li>
                     </ul>
                 </nav>
+            </article>
         </section>
     </main>
     <footer>

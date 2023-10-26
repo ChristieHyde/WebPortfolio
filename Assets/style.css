@@ -5,10 +5,12 @@
 }
 
 :root {
-    --navy-blue: navy;
-    --light-blue: cyan;
-    --indigo: indigo;
+    --default-text: #284659;
+    --highlight: #c9f0ff;
+    --header-dark: #000330;
+    --link-overlay: blue;
     --edge-margin: 80px;
+    --min-size: 285px; /* Minimum size before images start tiling */
 }
 
 body {
@@ -22,14 +24,14 @@ header {
     height: 80px;
     width: 100%;
     line-height: 60px;
-    background-color: var(--indigo);
-    color: var(--light-blue);
+    background-color: var(--header-dark);
+    color: var(--highlight);
 }
 
 header h1 {
     display: inline;
-    background-color: var(--light-blue);
-    color: var(--indigo);
+    background-color: var(--highlight);
+    color: var(--header-dark);
     padding-left: var(--edge-margin);
     padding-right: 10px;
 }
@@ -52,15 +54,14 @@ header h1 {
 }
 
 #page-navigation a {
-    color: var(--light-blue);
+    color: var(--highlight);
 }
 
 main {
-    color: var(--navy-blue);
+    color: var(--default-text);
 }
 
 .hero {
-    background-color: fuchsia;
     min-height: 240px;
 }
 
@@ -72,8 +73,8 @@ main {
 }
 
 .hero-subtitle {
-    background-color: var(--light-blue);
-    color: var(--indigo);
+    background-color: var(--highlight);
+    color: var(--header-dark);
     font-size: 36px;
     padding: 2px 5px;
     margin-right: var(--edge-margin);
@@ -89,12 +90,23 @@ main {
     min-width: 150px;
     text-align: right;
     padding-right: 10px;
-    border-right: 2px solid var(--navy-blue);
+    border-right: 2px solid var(--default-text);
     margin-right: 20px;
 }
 
 .content-container {
     width: 100%;
+}
+
+#about-container {
+    display: flex;
+}
+
+#my-photo {
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--highlight);
+    margin-left: 10px;
 }
 
 .portfolio-container {
@@ -108,25 +120,51 @@ main {
 .portfolio-card {
     display: flex;
     width: 46%;
+    min-width: var(--min-size);
     height: 100px;
-    background-color: fuchsia;
-    border: 3px solid var(--light-blue);
+    border: 3px solid var(--highlight);
     margin: 10px;
     align-items: flex-end;
 }
 
-.portfolio-card:hover {
-    background-color: yellow;
+.card-overlay-inset {
+    width: 100%;
+    height: 100%;
 }
 
-#top-result {
+.top-result {
     width: 100%;
     height: 240px;
 }
 
+.card-overlay {
+    position: relative;
+    width: 46%;
+    min-width: var(--min-size);
+    height: 106px;
+    background-color: var(--link-overlay);
+    opacity: 0%;
+    margin: 10px;
+    margin-top: -116px;
+    margin-left: -46%;
+}
+
+.card-overlay:hover {
+    opacity: 10%;
+}
+
+.card-overlay.top-result {
+    width: 100%;
+    height: 246px;
+    margin-top: -256px;
+    margin-left: 10px;
+}
+
 .portfolio-title {
     position: relative;
-    background-color: var(--light-blue);
+    background-color: var(--highlight);
+    color: var(--default-text);
+    text-decoration: none;
     padding: 2px 5px;
     margin-bottom: 10px;
 }
@@ -150,17 +188,43 @@ main {
 }
 
 #contact-links a {
-    color: var(--navy-blue);
+    color: var(--default-text);
 }
 
 footer {
-    color: var(--navy-blue);
+    color: var(--default-text);
     text-align: center;
+}
+
+/* Background images */
+#hero-image {
+    background-image: url("./number-matrix.jpg");
+    background-size: 100%;
+}
+
+#horiseon-card {
+    background-image: url("./horiseon-preview.jpg");
+    background-size: 100%;
+}
+
+#css-snippet-card {
+    background-image: url("./snippet-preview.png");
+    background-size: 100%;
+}
+
+#sample-landing-card {
+    background-image: url("./sample-preview.png");
+    background-size: 100%;
 }
 
 @media screen and (max-width: 992px) {
     .portfolio-card {
         width: 100%;
+    }
+
+    .card-overlay {
+        width: 100%;
+        margin-left: 10px;
     }
 }
 

@@ -26,7 +26,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero-image">
             <div class="hero-container">
                 <p class="hero-subtitle">Web Developer</p>
             </div>
@@ -34,7 +34,7 @@
         <section class="page-content">
             <article id="about">
                 <h2>About Me</h2>
-                <div class="content-container">
+                <div class="content-container" id="about-container">
                     <p class="content-container">I am a web developer based in 
                         Australia. I have industry experience working with 
                         CSS, JavaScript and React technologies. More recently, 
@@ -42,29 +42,35 @@
                         Coding Bootcamp to increase my skills and independence 
                         in these areas.
                     </p>
-                    <img id="my-photo">
+                    <img src="./assets/pfp-small.png" alt="Photograph of Christie Hyde" id="my-photo">
                 </div>
             </article>
             <article id="portfolio">
                 <h2>My Work</h2>
                 <div class="content-container portfolio-container">
-                    <div class="portfolio-card" id="top-result">
+                    <div class="portfolio-card top-result" id="horiseon-card">
                         <div class="portfolio-title">
                             <h3>Horiseon Webpage</h3>
                             <p>HTML/CSS</p>
                         </div>
                     </div>
-                    <div class="portfolio-card">
+                    <div class="card-overlay top-result">
+                        <a href="https://christiehyde.github.io/Week1Challenge/">
+                            <div class="card-overlay-inset"></div>
+                        </a>
+                    </div>
+                    <div class="portfolio-card" id="css-snippet-card">
+
                         <div class="portfolio-title">
                             <h3>CSS Snippet Cheatsheet</h3>
                             <p>HTML/CSS</p>
                         </div>
                     </div>
-                    <div class="portfolio-card">
-                        <div class="portfolio-title">
-                            <h3>Sample Landing Page</h3>
-                            <p>HTML/CSS</p>
-                        </div>
+                    <div class="portfolio-card"  id="sample-landing-card">
+                            <div class="portfolio-title">
+                                <h3>Sample Landing Page</h3>
+                                <p>HTML/CSS</p>
+                            </div>
                     </div>
                 </div>
             </article>
@@ -73,7 +79,7 @@
                 <nav class="content-container" id="contact-links">
                     <ul>
                         <li>Email (coming soon)</li>
-                        <li a="https://github.com/ChristieHyde">Github</li>
+                        <li><a href="https://github.com/ChristieHyde">Github</a></li>
                         <li>LinkedIn (coming soon)</li>
                     </ul>
                 </nav>

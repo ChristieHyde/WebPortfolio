@@ -11,7 +11,7 @@ The webpage is hosted online and can be accessed using the following link: https
 
 A screenshot of the webpage is provided:
 
-![Screenshot of the Christie Hyde's Portfolio webpage](Assets/webpage-screenshot.png)
+![Screenshot of the Christie Hyde's Portfolio webpage](assets/webpage-screenshot.png)
 
 Users can navigate the webpage using the scroll bar, or can click on a link in the navigation bar to jump to that section of the webpage.
 
